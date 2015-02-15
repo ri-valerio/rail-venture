@@ -1,2 +1,1 @@
-# rail-venture
-:rocket:
+# rails-venture :rocket:
