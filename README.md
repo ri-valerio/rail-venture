@@ -1,15 +1,15 @@
 # rails-venture :rocket:
 
-## rails new <app-name>
+###### rails new <app-name> #
 example:
  rails new baby-steps-in-rails
 
-## rails server
+###### rails server #
 
-## rails generate <controller-name> [action-name] [another-action-name] [and-so-on]
+###### rails generate <controller-name> [action-name] [another-action-name] [and-so-on] #
 
 example:
- rails generate controller index index hello
+   rails generate controller index index hello
 
       create  app/controllers/index_controller.rb
        route  get 'index/hello'
@@ -31,10 +31,11 @@ example:
       create      app/assets/stylesheets/index.css.scss
 
 
-## rails generate model <database-name> [db-field:type] [another-db-field:type] [and-so-on]
+###### rails generate model <database-name> [db-field:type] [another-db-field:type] [and-so-on] #
 
 example:
    rails g model baby_steps title:string description:text num_followers:integer
+
       invoke  active_record
       create    db/migrate/20150216211654_create_baby_steps.rb
       create    app/models/baby_steps.rb
@@ -42,7 +43,7 @@ example:
       create      test/models/baby_steps_test.rb
       create      test/fixtures/baby_steps.yml
 
-## rake db:migrate
+###### rake db:migrate #
 
 output:
 == 20150216211654 CreateBabySteps: migrating ==================================
@@ -50,10 +51,10 @@ output:
    -> 0.0022s
 == 20150216211654 CreateBabySteps: migrated (0.0024s) =========================
 
-##
+###### #
 
-##
-##
-##
-##
+###### #
+###### #
+###### #
+###### #
 
