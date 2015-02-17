@@ -112,9 +112,29 @@ output:
 
 ###### rails server #
 
-###### open http://localhost:3000/blog #
+###### open http://localhost:3000/blog # (sometimes it changes for plural names =/)
 
-###### #
+---
+
+###### rails console #
+   
+Loading development environment (Rails 4.2.0)
+
+		2.2.0 :002 > Bazinga.create({title: "Hello Rails!", description: "this framework is really neat", num_followers: "10" })
+		
+--
+		   (0.2ms)  begin transaction
+		  SQL (0.4ms)  INSERT INTO "bazingas" ("title", "description", "num_followers", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Hello Rails!"], ["description", "this framework is really neat"], ["num_followers", 10], ["created_at", "2015-02-17 02:29:18.971448"], ["updated_at", "2015-02-17 02:29:18.971448"]]
+		   (0.9ms)  commit transaction
+		 => #<Bazinga id: 1, title: "Hello Rails!", description: "this framework is really neat", num_followers: 10, created_at: "2015-02-17 02:29:18", updated_at: "2015-02-17 02:29:18"> 
+	
+--
+		2.2.0 :005 >   Bazinga.all
+	
+	  Bazinga Load (8.6ms)  SELECT "bazingas".* FROM "bazingas"
+	 => #<ActiveRecord::Relation [#<Bazinga id: 1, title: "Hello Rails!", description: "this framework is really neat", num_followers: 10, created_at: "2015-02-17 02:29:18", updated_at: "2015-02-17 02:29:18">]> 
+
+
 ###### #
 ###### #
 ###### #
