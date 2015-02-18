@@ -5,7 +5,7 @@ class CreateBabySteps < ActiveRecord::Migration
       t.text :description
       t.integer :num_followers
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

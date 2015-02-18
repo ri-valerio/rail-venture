@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @bazinga.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @bazinga.description %>
+</p>
+
+<p>
+  <strong>Num followers:</strong>
+  <%= @bazinga.num_followers %>
+</p>
+
+<%= link_to 'Edit', edit_bazinga_path(@bazinga) %> |
+<%= link_to 'Back', bazingas_path %>

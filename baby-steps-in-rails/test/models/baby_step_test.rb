@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BabyStepsTest < ActiveSupport::TestCase
+class BabyStepTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
