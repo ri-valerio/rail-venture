@@ -1,9 +1,9 @@
-# first one of a series of great tutorials by [mackenziechild](https://github.com/mackenziechild/)
+# first one of a series of great tutorials by [https://github.com/mackenziechild/]
 ---
-Week 1 of my 12 Web Apps in 12 Weeks [http://mackenziechild.me/12-in-12/1/](http://mackenziechild.me/12-in-12/1/)
+Week 1 of my 12 Web Apps in 12 Weeks [http://mackenziechild.me/12-in-12/1/]
 
 Original Github Repo:
-[https://github.com/mackenziechild/raddit](https://github.com/mackenziechild/raddit)
+[https://github.com/mackenziechild/raddit]
 ---
 
 ###### rails new blog-news
@@ -28,7 +28,7 @@ Original Github Repo:
 ###### reload! // inside the rails console to reboot the code
 	// the result is an error
 	// put again those relationship in place and we are cool
-	
+
 ###### rails g migration add_user_id_to_links user_id:integer:index
 ###### rake db:migrate
 
@@ -43,8 +43,8 @@ Original Github Repo:
 	// puts Link.all.to_yaml  // nice formatted output
 
 ###### bundle install
-######
-######
+###### rails g acts_as_votable:migration
+###### rake db:migrate
 ######
 ######
 ######
