@@ -1,14 +1,21 @@
 Rails.application.routes.draw do
+  resources :comments
 
-  get 'index/index'
-  get 'index/hello'
-
+  devise_for :users
+  resources :links do
+    member do
+      put "like", to:    "links#upvote"
+      put "dislike", to: "links#downvote"
+    end
+    resources :comments
+  end
+  root "links#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'index#index'
+  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

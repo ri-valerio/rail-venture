@@ -3,5 +3,6 @@ class IndexController < ApplicationController
   end
 
   def hello
+  	@name = "Ricardo Valério"
   end
 end
