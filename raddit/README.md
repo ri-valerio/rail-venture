@@ -1,10 +1,15 @@
-# first one of a series of great tutorials by [https://github.com/mackenziechild/]
+### first one of a series of great tutorials by https://github.com/mackenziechild/
+
 ---
+
 Week 1 of my 12 Web Apps in 12 Weeks [http://mackenziechild.me/12-in-12/1/]
 
 Original Github Repo:
-[https://github.com/mackenziechild/raddit]
+https://github.com/mackenziechild/raddit
+
 ---
+
+Steps:
 
 ###### rails new blog-news
 ###### blog-news
@@ -45,9 +50,9 @@ Original Github Repo:
 ###### bundle install
 ###### rails g acts_as_votable:migration
 ###### rake db:migrate
-######
-######
-######
-######
-######
-######
+######  rails g scaffold Comment link_id:integer:index body:text user:references --skip-stylesheets
+######  rake db:migrate
+######  bundle install
+######  rake routes
+######  rails g migration add_name_to_users name:string
+######  rake db:migrate
