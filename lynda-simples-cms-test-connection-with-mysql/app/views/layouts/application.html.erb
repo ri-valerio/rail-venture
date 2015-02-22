@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AgileWebDevBook</title>
+  <title>LyndaSimplesCmsTestConnectionWithMysql</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-
-<!-- ao colocar o nome do controller aqui como class, rails vai
-	optimizar os ficheiros Css que irão ser injectados no ficheiro da aplicação -->
-<body class="<%= controller.controller_name %>">
+<body>
 
 <%= yield %>
 

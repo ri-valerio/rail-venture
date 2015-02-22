@@ -1,0 +1,41 @@
+###   rails new lynda-simples-cms-test-connection-with-mysql -d mysql
+
+	   then just changed the name of the database to be equal to the one
+	   that exists in my mysql database
+
+---
+
+###   rails server
+
+---
+
+###   rails generate controller demo index
+
+---
+
+### 3 ways of doing a route (the last two can be configured to match whatever you want)
+
+	  get 'demo/index'
+
+	  get 'demo/' => 'demo#index'
+
+	  match "demo/",
+	    :to => "demo#index",
+	    :via => :get
+
+---
+
+### specifying a default route for every request
+  match ":controller(/:action(/:id))", :via => :get
+
+### the same as the above but we can specify the format (JSON for example)
+#### this is not good practice
+  match ":controller(/:action(/:id(.:format)))", :via => :get
+
+---
+
+
+############################################################################
+sometimes rake db:migrate throws an error and it can be solved with:
+	bundle exec rake db:migrate
+############################################################################
