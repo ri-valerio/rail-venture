@@ -1,2 +1,29 @@
 <h1>Demo#hello</h1>
 <p>Find me in app/views/demo/hello.html.erb</p>
+
+
+<hr>
+<p>controller, action, id, page, name</p>
+<%= link_to "Hello page bazinga", controller: "demo", action: "bazinga", id: 2, page: 12, name: "RiValerio" %>
+<br>
+<hr>
+<p>controller, action, id, page, name</p>
+<%= link_to "Hello page bazinga", :controller => "demo", :action => "bazinga", :id => 2, :page => 21, :name => "RiValerio" %>
+<br>
+<hr>
+<p>controller, action, page, id, name</p>
+<%= link_to "Hello page bazinga", :controller => "demo", :action => "bazinga",  :page => 20, :id => 1,:name => "RiValerio" %>
+
+<h3>as we can see, rails is a dictator when it comes to arrange the params on its on way lol</h3>
+
+<hr>
+
+<% @users.each do |user| %>
+	<br><%= user.first_name %>
+<% end %>
+
+<hr>
+
+<% @medicos.each do |medico| %>
+	<br><%= medico.primeiro_nome %>
+<% end %>

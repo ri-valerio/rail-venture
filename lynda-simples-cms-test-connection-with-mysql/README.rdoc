@@ -34,8 +34,71 @@
 
 ---
 
+controller/action/id/page/name
+/demo/hello/1?page=3&name=rivalerio
+
+id is special so it becames to the left of the question mark.
+
+to access parameters that are passed via GET or POST we use the "params" keyword
+
+params is what's called an hash with indiferent access, i.e,
+we can access the parameter's values by referencing a string or a hash symbol
+
+params['id']
+params[:id]
+
+---
+
+para fazer um dump em rails de todas as tabelas existentes na BD,
+como faço com o phalcon-models, executa-se o seguinte comando:
+
+rake db:schema:dump    ou ainda, rake db:migrate segundo a documentação
+
+nota: é também possível passar variáveis como argumento
+
+		rake db:schema:dump RAILS_ENV=production
+
+o default é development
+---
+	depois é necessário gerar uma migration para poder usufruir do ficheiro
+	schema.rb que foi criado automaticamente
+
+---
+
+ para listar todos os comandos existentes para o comando "rake":
+
+ 	rake -T
+
+retorna todas as "Tasks" existentes
+
+---
+		  | COLUMN TYPES |
+	  	  |--------------|
+	  	  | boolean      |
+	  	  | date         |
+	  	  | datetime     |
+	  	  | decimal      |
+	  	  | float        |
+	  	  | inte         |
+	  	  | string       |
+	  	  | text         |
+	  	  | time         |
+
+		  |    COLUM OPTIONS     |
+		  |----------------------|
+		  | :limit => size       |
+		  | :default => value    |
+		  | :null => true/false  |
+		  | :precision => number |
+		  | :scale => number     |
+
+---
+---
+---
 
 ############################################################################
 sometimes rake db:migrate throws an error and it can be solved with:
 	bundle exec rake db:migrate
 ############################################################################
+
+
