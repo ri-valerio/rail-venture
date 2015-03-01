@@ -122,18 +122,22 @@ rake db:migrate VERSION=0    #isto faz com que o método down seja chamado
 
 ---
 
-rails g model Subject
-rails g model Page
-rails g model Section
-
----
-
 rake db:migrate
 rake db:migrate:status
 rake db:migrate VERSION="TIME_STAMP_HERE" se eu quiser ir para alguma versão em particular
 rake db:migrate
 
 ---
+# generating a model
+
+rails g model SingleNameAndUpperCase
+
+por exemplo:
+
+	rails g model Subject
+	rails g model Page
+	rails g model Section
+
 ---
 ---
 ---
