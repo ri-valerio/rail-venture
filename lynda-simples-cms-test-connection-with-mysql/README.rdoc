@@ -93,6 +93,35 @@ retorna todas as "Tasks" existentes
 		  | :scale => number     |
 
 ---
+	|    TABLE MIGRATION METHODS    |
+	| ----------------------------- |
+	| create_table(table, options)  |
+	| drop_table(end)               |
+	| rename_table(table, new_name) |
+
+---
+
+	|           COLUMN MIGRATION METHODS          |
+	| ------------------------------------------- |
+	| add_column(table, column, type, options)    |
+	| remove_column(table, columun)               |
+	| rename_column(table, column, new_name)      |
+	| change_column(table, column, type, options) |
+	| add_index(table, column)                    |
+
+---
+## aplica as migations que ainda não foram executadas, isto é, que não constam na table schema_migrations na base de dados
+rake db:migrate		#isto faz com que o método up seja chamado
+
+## reverte todas as migrations para a versão passada, neste caso, reverte tudo:
+rake db:migrate VERSION=0    #isto faz com que o método down seja chamado
+
+---
+---
+---
+---
+---
+---
 ---
 ---
 
